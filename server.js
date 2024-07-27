@@ -6,7 +6,7 @@ const port = 3001;
 const app = express();
 
 var corsOptions = {
-    origin: "http://localhost:3001",
+    origin: "http://localhost:5173",
     credentials: true
 }
 
@@ -75,5 +75,4 @@ app.post("/calculate",(req,res) => {
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
-})  
-
+});

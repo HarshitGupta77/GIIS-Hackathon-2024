@@ -31,7 +31,7 @@ export default function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5173/calculate",{
+      const response = await fetch("http://localhost:3001/calculate",{
         method: "POST",
         headers: {
           "Content-Type":"application/json",
@@ -47,7 +47,8 @@ export default function App() {
       }
 
       const data = await response.json();
-
+      console.log("API Response Data:", data);
+    
       setResult(data);
 
 
@@ -58,10 +59,10 @@ export default function App() {
           {
             label: "CO2 Emissions (kgCO2e/year)",
             data: [
-              data.totalTransportationUsage || 0,
-              data.totalElectricityUsage || 0,
-              data.totalEmissionsFlight|| 0,
-              data.dietaryChoiceEmissions || 0
+              data.totalTransportationUsage.value || 0,
+              data.totalElectricityUsage.value || 0,
+              data.totalEmissionsFlight.value|| 0,
+              data.dietaryChoiceEmissions.value || 0
             ],
             backgroundColor: [
               "rgba(255,99,132,0.6)",
@@ -81,6 +82,7 @@ export default function App() {
       })
 
       console.log(data);
+      console.log("API Response Data:", data);
     } catch(err){
       console.log(err);
     }
@@ -96,10 +98,10 @@ export default function App() {
       {
         label: "CO2 Emissions (kgCO2e/year)",
         data: [
-          result?.totalTransportationUsage || 0,
-          result?.totalElectricityUsage || 0,
-          result?.totalEmissionsFlight|| 0,
-          result?.dietaryChoiceEmissions || 0
+          result?.totalTransportationUsage.value || 0,
+          result?.totalElectricityUsage.value || 0,
+          result?.totalEmissionsFlight.value || 0,
+          result?.dietaryChoiceEmissions.value || 0
         ],
         backgroundColor: [
           "rgba(255,99,132,0.6)",
@@ -171,8 +173,8 @@ export default function App() {
                 <label className="mb-2">(Miles Per Month / Miles Per Gallon) * Cost Per Gallon</label>
                 <input 
                   type="number" 
-                  name="TransportationGasolineUsage" 
-                  value={formData.TransportationGasolineUsage}
+                  name="transportationUsageGallonsPerMonth" 
+                  value={formData.transportationUsageGallonsPerMonth}
                   onChange={handleChange}
                   className="border border-gray-300 rounded-md p-2"
                 /> 
@@ -181,8 +183,8 @@ export default function App() {
                 <label className="mb-2"> Short Flights (4 hours): </label>
                 <input 
                   type="number" 
-                  name="ShortFlights" 
-                  value={formData.ShortFlights}
+                  name="shortFlight" 
+                  value={formData.shortFlight}
                   onChange={handleChange}
                   className="border border-gray-300 rounded-md p-2"
                 /> 
@@ -190,8 +192,8 @@ export default function App() {
                 <label className="mb-2"> Long Flights (8 hours): </label>
                 <input 
                   type="number" 
-                  name="LongFlights" 
-                  value={formData.LongFlights}
+                  name="longFlight" 
+                  value={formData.longFlight}
                   onChange={handleChange}
                   className="border border-gray-300 rounded-md p-2"
                 />  
@@ -199,8 +201,8 @@ export default function App() {
               <div className="flex flex-col">
                 <label className="mb-2 "> Dietary Choice: </label>
                 <select
-                  name="dietaryChoice"
-                  value={formData.dietaryChoice}
+                  name="dieteryChoice"
+                  value={formData.dieteryChoice}
                   onChange={handleChange}
                   className="border border-gray-300 rounded-md p-2"            
                 >
