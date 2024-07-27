@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import backgroundImage from "./assets/CarbonFootprintF1.jpg"; 
-import backgroundImage3 from "./assets/Foliage_F2.jpg"; 
+import backgroundImage2 from "./assets/Foliage_F2.jpg"; 
 import { Bar } from "react-chartjs-2"; 
 import { Chart, registerables } from "chart.js"; 
 
@@ -9,9 +9,8 @@ function App() {
   const [formData, setFormData] = useState({
     electricityUsageKWh: "",
     transportationUsageGallonsPerMonth: "",
-    flightsShortHaul: "",
-    flightsMediumHaul: "",
-    flightsLongHaul: "",
+    shortFlight: "",
+    longFlight: "",
     dietaryChoice: "Vegetarian", 
   });
   const [result, setResult] = useState<any>(null);
@@ -124,7 +123,7 @@ function App() {
       <div
         className="min-h-screen flex items-center justify-center p-5 flex-col"
         style={{
-          backgroundImage: `url(${backgroundImage3})`,
+          backgroundImage: `url(${backgroundImage2})`,
           backgroundSize: "cover",
         }}
       >
@@ -139,7 +138,7 @@ function App() {
             My Carbon Footprint
           </h1>
           <p className="text-xl font-bold text-center text-white">
-            By @ByteClub
+            @ByteClub
           </p>
         </div>
 
@@ -162,9 +161,10 @@ function App() {
                 />
               </div>
               <div className="flex flex-col">
-                <label className="mb-2">
-                  Transportation Gasoline Usage (Gallons/Month):
+                <label className="">
+                  Transportation Gasoline Usage (Gallons/Month) - 
                 </label>
+                <label className="mb-2">[Formula to Calculate = (Miles Per Month / Miles Per Gallon) * Cost Per Gallon]:</label>
                 <input
                   type="number"
                   name="transportationUsageGallonsPerMonth"
@@ -174,31 +174,21 @@ function App() {
                 />
               </div>
               <div className="flex flex-col">
-                <label className="mb-2">Short Flights:</label>
+                <label className="mb-2">Short Flights (under 4 hours):</label>
                 <input
                   type="number"
-                  name="flightsShortHaul"
-                  value={formData.flightsShortHaul}
+                  name="shortFlight"
+                  value={formData.shortFlight}
                   onChange={handleChange}
                   className="border border-gray-300 rounded-md p-2"
                 />
               </div>
               <div className="flex flex-col">
-                <label className="mb-2">Medium Flights:</label>
+                <label className="mb-2">Long Flights (over 4 hours):</label>
                 <input
                   type="number"
-                  name="flightsMediumHaul"
-                  value={formData.flightsMediumHaul}
-                  onChange={handleChange}
-                  className="border border-gray-300 rounded-md p-2"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label className="mb-2">Long Flights:</label>
-                <input
-                  type="number"
-                  name="flightsLongHaul"
-                  value={formData.flightsLongHaul}
+                  name="longFlight"
+                  value={formData.longFlight}
                   onChange={handleChange}
                   className="border border-gray-300 rounded-md p-2"
                 />
@@ -213,8 +203,7 @@ function App() {
                 >
                   <option value="Vegan">Vegan</option>
                   <option value="Vegetarian">Vegetarian</option>
-                  <option value="Pescatarian">Pescatarian</option>
-                  <option value="MeatEater">Meat Eater</option>
+                  <option value="NonVegetarian">Non Vegetarian</option>
                 </select>
               </div>
               <br />
