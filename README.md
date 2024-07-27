@@ -2,9 +2,9 @@
 
 **Carbon Footprint Calculator -**
 
-    See how much carbon footprint you produce 
+See how much carbon footprint you produce 
 
-    Team: 
-    - Harshit Gupta
-    - Dhruv Nambiar
-    - Yash Bansal
+Team: 
+- Harshit Gupta
+- Dhruv Nambiar
+- Yash Bansal
