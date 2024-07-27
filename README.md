@@ -4,7 +4,7 @@
 
 See how much carbon footprint you produce 
 
-Team: 
+By **ByteClub**: 
 - Harshit Gupta
 - Dhruv Nambiar
 - Yash Bansal
