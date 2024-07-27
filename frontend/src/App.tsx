@@ -31,7 +31,7 @@ export default function App() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5173/calculate",{
+      const response = await fetch("http://localhost:3001/calculate",{
         method: "POST",
         headers: {
           "Content-Type":"application/json",
@@ -47,7 +47,8 @@ export default function App() {
       }
 
       const data = await response.json();
-
+      console.log("API Response Data:", data);
+    
       setResult(data);
 
 
@@ -81,6 +82,7 @@ export default function App() {
       })
 
       console.log(data);
+      console.log("API Response Data:", data);
     } catch(err){
       console.log(err);
     }
