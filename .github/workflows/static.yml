@@ -33,11 +33,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      # Move test1.html to root and rename to index.html
+      # Move index.html to root
       - name: Move index.html to root
         run: |
           mkdir -p gh-pages
-          mv Elements_Website/test1.html gh-pages/index.html
+          mv Elements_Website/index.html gh-pages/index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
