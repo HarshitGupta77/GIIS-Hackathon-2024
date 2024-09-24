@@ -37,12 +37,12 @@ jobs:
       - name: Move index.html to root
         run: |
           mkdir -p gh-pages
-          mv Elements_Website/index.html gh-pages/index.html
+          mv Elements_Website/index.html ./index.html
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: 'gh-pages'
+          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
