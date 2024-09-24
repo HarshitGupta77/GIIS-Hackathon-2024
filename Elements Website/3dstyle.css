@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern and clean font */
+    color: #e0e0e0; /* Light text color */
+    background: transparent; /* Make background transparent */
+}
+
+.background-iframe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind all other content */
+    overflow: hidden;
+}
+
+header {
+    background-color: rgba(30, 30, 30, 0.9); /* Slightly transparent background */
+    color: #e0e0e0; /* Light text color */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px; /* Larger font size for the header */
+    margin: 0;
+    color: #ffffff; /* Light text color */
+    font-weight: 700; /* Bold text for prominence */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e0e0e0;
+    font-weight: 500; /* Medium font weight for menu items */
+    font-size: 16px; /* Slightly larger font size for readability */
+    transition: color 0.3s, text-decoration 0.3s; /* Smooth transition effects */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #4db6ac; /* Modern teal color on hover */
+}
+
+main {
+    margin-top: 80px; /* Space for fixed header */
+    padding: 20px;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: #e0e0e0; /* Light text color */
+}
+
+.parallax:nth-of-type(odd) .content {
+    background: rgba(0, 0, 0, 0.8); /* Darker overlay */
+}
+
+.parallax:nth-of-type(even) .content {
+    background: rgba(0, 0, 0, 0.7); /* Slightly lighter overlay */
+}
+
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.content h2 {
+    font-size: 28px; /* Slightly larger font size for section headers */
+    color: #ffffff; /* Light text color for headers */
+    margin-bottom: 20px;
+    font-weight: 700; /* Bold text for headers */
+}
+
+.content p {
+    font-size: 18px; /* Larger font size for better readability */
+    line-height: 1.6; /* Increased line-height for readability */
+    margin-bottom: 20px;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Increased max-width for larger iframes */
+    height: 600px; /* Increased height for better visibility */
+    margin: 20px auto;
+    background: #1e1e1e; /* Dark background for iframe container */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(30, 30, 30, 0.9); /* Slightly transparent background */
+    color: #e0e0e0; /* Light text color */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.4);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    color: #e0e0e0;
+    font-size: 14px; /* Smaller font size for footer text */
+}
