@@ -107,6 +107,11 @@ header nav ul li a:hover {
     margin-top: 6rem;
 }
 
+.content-section > .info-box {
+    flex: 1 1 30%;
+    height: 100%;
+}
+
 .info-box {
     background: var(--background-color);
     box-shadow: var(--box-shadow);

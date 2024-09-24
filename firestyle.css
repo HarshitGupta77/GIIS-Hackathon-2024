@@ -100,22 +100,21 @@ header nav ul li a:hover {
     color: var(--nav-hover-color);
 }
 
-
 .content-section {
-    padding: 8rem 2rem 2rem 2rem; /* Add more padding to the top */
-    text-align: center;
-}
-
-.info {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    padding: 8rem 1rem 2rem;	
+    padding: 8rem 1rem 2rem;
     margin-top: 6rem;
 }
 
-.text-box {
+.content-section > .info-box {
+    flex: 1 1 30%;
+    height: 100%;
+}
+
+.info-box {
     background-color: rgba(0, 0, 0, 0.7);
     background: var(--background-color);
     box-shadow: var(--box-shadow);
@@ -128,13 +127,13 @@ header nav ul li a:hover {
 }
 
 
-.text-box h2 {
+.info-box h2 {
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
-.text-box p {
+.info-box p {
     font-size: 1.4rem;
     color: var(--text-color);
 }

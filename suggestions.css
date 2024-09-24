@@ -9,7 +9,7 @@ body, html {
     
 }
 
-h2{
+h1 {
    color: #4fc3f7;
 }
 
@@ -42,6 +42,7 @@ h2{
     padding: 15px 20px;
     text-align: center;
     position: fixed;
+    height: 100px;
     top: 0;
     left: 0;
     width: 100%;
@@ -62,7 +63,7 @@ h2{
 }
 
 .content {
-    margin-top: 150px;
+    margin-top: 140px;
     padding: 0 20px;
     z-index: 1;
     position: relative;
@@ -75,6 +76,7 @@ h2{
     margin-bottom: 20px;
     padding: 20px;
     transition: transform 0.3s ease;
+    scroll-margin-top: 140px ;
 }
 
 .solution-section:hover {
