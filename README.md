@@ -1,8 +1,8 @@
 # Hackathon 2K24
 
-# Byte Club Hackathon Project: Life on All Elements
+# Hackathon Theme: Life on All Elements
 
-Welcome to our hackathon project, where we explore the theme "Life on All Elements." Our project consists of two main components: a **Carbon Footprint Calculator** and an engaging **Website** dedicated to the four elements of life: Earth, Fire, Air, and Water, along with practical suggestions for reducing your carbon footprint.
+Welcome to our hackathon project, where we explore the theme **"Life on All Elements."** Our project consists of two main components: a **Carbon Footprint Calculator** and an engaging **Website** dedicated to the four elements of life: Earth, Fire, Air, and Water, along with practical suggestions for reducing your carbon footprint.
 
 ## 🌍 Carbon Footprint Calculator
 
@@ -35,19 +35,20 @@ The suggestions section offers actionable tips to help users reduce their carbon
 
 All webpages are designed with an interactive animation background to create an immersive experience. Each subpage includes easy navigation links back to the main page, ensuring seamless user experience.
 
-## 👥 Our Team
-
-This project was developed by our dedicated team, **Byte Club**, consisting of three enthusiastic members who are passionate about addressing climate change and promoting environmental sustainability.
-
-Join us in making a positive impact on our planet by understanding and managing our carbon footprints! 🌱
-
 ---
 
 **Get Started**: [Explore the Carbon Footprint Calculator](#) | [Visit the Elements of Life Website](#)
 
 **Contributions and feedback are welcome!**
 
-By **ByteClub**: 
+## 👥 Our Team
+
+This project was developed by our dedicated team, **Byte Club**, consisting of three enthusiastic members who are passionate about addressing climate change and promoting environmental sustainability.
+
+Join us in making a positive impact on our planet by understanding and managing our carbon footprints! 🌱
+
+### Team ByteClub: 
+
 - Harshit Gupta
 - Dhruv Nambiar
 - Yash Bansal
