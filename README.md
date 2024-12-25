@@ -45,7 +45,7 @@ This project was developed by our dedicated team, **Byte Club**, consisting of t
 
 Join us in making a positive impact on our planet by understanding and managing our carbon footprints! 🌱
 
-### Team Byte Club: 
+#### Team Byte Club: 
 
 - Harshit Gupta
 - Dhruv Nambiar
