@@ -1,6 +1,4 @@
-# Hackathon 2K24
-
-# Hackathon Theme: Life on All Elements
+# Theme: Life on All Elements
 
 Welcome to our hackathon project, where we explore the theme **"Life on All Elements."** Our project consists of two main components: a **Carbon Footprint Calculator** and an engaging **Website** dedicated to the four elements of life: Earth, Fire, Air, and Water, along with practical suggestions for reducing your carbon footprint.
 
