@@ -35,11 +35,11 @@ The suggestions section offers actionable tips to help users reduce their carbon
 
 All webpages are designed with an interactive animation background to create an immersive experience. Each subpage includes easy navigation links back to the main page, ensuring seamless user experience.
 
----
-
 **Get Started**: [Explore the Carbon Footprint Calculator](#) | [Visit the Elements of Life Website](#)
 
 **Contributions and feedback are welcome!**
+
+---
 
 ## 👥 Our Team
 
@@ -47,7 +47,7 @@ This project was developed by our dedicated team, **Byte Club**, consisting of t
 
 Join us in making a positive impact on our planet by understanding and managing our carbon footprints! 🌱
 
-### Team ByteClub: 
+### Team Byte Club: 
 
 - Harshit Gupta
 - Dhruv Nambiar
