@@ -33,7 +33,7 @@ The suggestions section offers actionable tips to help users reduce their carbon
 
 All webpages are designed with an interactive animation background to create an immersive experience. Each subpage includes easy navigation links back to the main page, ensuring seamless user experience.
 
-**Get Started**: [Explore the Carbon Footprint Calculator](#) | [Visit the Elements of Life Website](https://harshitgupta77.github.io/Hackathon-2024/)
+**Get Started**: [Explore the Carbon Footprint Calculator](#) | [Visit the Elements of Life Website](https://harshitgupta77.github.io/GIIS-Hackathon-2024/)
 
 **Contributions and feedback are welcome!**
 
